@@ -1,7 +1,7 @@
 # springboot2-security-jwt
  Spring Boot Token based Authentication with Spring Security & JWT
  
-  `Things Implemented :`
+  `Concepts Covered :`
  
 - Appropriate Flow for User Signup & User Login with JWT Authentication
 - Spring Boot Application Architecture with Spring Security
