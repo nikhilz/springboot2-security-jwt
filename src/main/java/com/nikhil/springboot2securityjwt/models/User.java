@@ -17,7 +17,6 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-import org.hibernate.annotations.ManyToAny;
 
 @Entity
 @Table(name = "users")
@@ -36,6 +35,10 @@ public class User {
 	@NotBlank
 	@Email @Size(max = 200)
 	private String email;
+	
+	@NotBlank
+	@Size(max = 120)
+	private String password;
 	
 	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(
@@ -87,6 +90,14 @@ public class User {
 
 	public void setRoles(Set<Role> roles) {
 		this.roles = roles;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 	
