@@ -23,7 +23,7 @@ import javax.validation.constraints.Size;
 public class User {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	@Column(unique = true)
@@ -51,13 +51,11 @@ public class User {
 		
 	}
 
-	public User(Long id, @NotBlank @Size(max = 20) String username, @NotBlank @Email @Size(max = 200) String email,
-			Set<Role> roles) {
-		super();
-		this.id = id;
+	public User(  String username,String email, String password) {
+		
 		this.username = username;
 		this.email = email;
-		this.roles = roles;
+		this.password = password;
 	}
 
 	public Long getId() {
