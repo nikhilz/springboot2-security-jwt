@@ -1,4 +1,10 @@
+
+<img src="https://raw.githubusercontent.com/nikhilz/ng8-myEMS/master/src/assets/images/logo-small.jpg" width="100" height="100">
+
 # springboot2-security-jwt
+
+Frontend : https://github.com/nikhilz/ng8-JwtAuth-Frontend
+
  Spring Boot Token based Authentication with Spring Security & JWT
  
   `Concepts Covered :`
